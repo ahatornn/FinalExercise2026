@@ -1,9 +1,15 @@
-﻿namespace FinalExercise.Dal.Contracts;
+﻿using FinalExercise.Dal.Contracts.Interfaces;
+
+namespace FinalExercise.Dal.Contracts;
 
 /// <summary>
 /// Базовый класс с аудитом
 /// </summary>
-public abstract class BaseAuditEntity
+public abstract class BaseAuditEntity:
+    IEntityWithId,
+    IEntityAuditCreated,
+    IEntityAuditUpdate,
+    IEntityAuditDeletedAt
 {
     /// <summary>
     /// Идентификатор

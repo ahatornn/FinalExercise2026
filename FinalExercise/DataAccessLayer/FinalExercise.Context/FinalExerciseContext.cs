@@ -1,0 +1,24 @@
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace FinalExercise.Context;
+
+public class FinalExerciseContext : DbContext
+{
+    /// <summary>
+    /// Инициализирует новый экземпляр <see cref="FinalExerciseContext"/>
+    /// </summary>
+    public FinalExerciseContext(DbContextOptions<FinalExerciseContext> options)
+        : base(options)
+    {
+        // https://support.aspnetzero.com/QA/Questions/11011/Cannot-write-DateTime-with-KindLocal-to-PostgreSQL-type-%27timestamp-with-time-zone%27-only-UTC-is-supported
+        AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+        AppContext.SetSwitch("Npgsql.DisableDateTimeInfinityConversions", true);
+    }
+
+    /// <inheritdoc />
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        
+    }
+}
