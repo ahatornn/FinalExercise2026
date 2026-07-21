@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FinalExercise.Entities.Configurations;
+using Microsoft.EntityFrameworkCore;
 
 namespace FinalExercise.Context;
 
@@ -19,6 +20,6 @@ public class FinalExerciseContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(IEntitiesAnchor).Assembly);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using FinalExercise.Context.EntityFrameworkCore;
+using FinalExercise.Dal.Contracts.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -26,6 +27,7 @@ public class DisciplineConfiguration: IEntityTypeConfiguration<Discipline>
 
         builder.HasIndex(x => x.Name)
             .HasDatabaseName("IX_DisciplinesName")
-            .IsUnique();
+            .IsUnique()
+            .HasFilter($"\"{nameof(IEntityAuditDeletedAt.DeletedAt)}\" IS NULL");
     }
 }
