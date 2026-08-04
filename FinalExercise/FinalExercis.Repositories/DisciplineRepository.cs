@@ -6,14 +6,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FinalExercis.Repositories;
 
-public class DisciplineRepository : IDisciplineRepository
+public class DisciplineRepository : BaseWriteRepository<Discipline>,  IDisciplineRepository
 {
     private readonly IReader reader;
 
     /// <summary>
     /// ctor.
     /// </summary>
-    public DisciplineRepository(IReader reader)
+    public DisciplineRepository(IDbWriterContext writerContext, IReader reader)
+    : base(writerContext)
     {
         this.reader = reader;
     }
