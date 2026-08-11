@@ -6,7 +6,7 @@ namespace FinalExercise.Api.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private static readonly string[] Summaries =
+    private static readonly string[] summaries =
     [
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     ];
@@ -18,7 +18,7 @@ public class WeatherForecastController : ControllerBase
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = summaries[Random.Shared.Next(summaries.Length)]
             })
             .ToArray();
     }
