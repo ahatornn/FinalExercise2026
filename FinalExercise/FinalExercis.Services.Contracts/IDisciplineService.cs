@@ -7,10 +7,25 @@ public interface IDisciplineService
     /// <summary>
     ///
     /// </summary>
-    Task<IReadOnlyCollection<DisciplineModel>> GetDisciplinesAsync(CancellationToken cancellationToken);
+    Task<IReadOnlyCollection<DisciplineModel>> GetDisciplines(CancellationToken cancellationToken);
 
     /// <summary>
     ///
     /// </summary>
-    Task<DisciplineModel?> GetDisciplineByIdAsync(Guid id, CancellationToken cancellationToken);
+    Task<DisciplineModel> GetDisciplineById(Guid id, CancellationToken cancellationToken);
+
+    /// <summary>
+    ///
+    /// </summary>
+    Task CreateDiscipline(DisciplineCreateModel disciplineCreateModel, CancellationToken cancellationToken);
+
+    /// <summary>
+    ///
+    /// </summary>
+    Task UpdateDiscipline(DisciplineModel disciplineModel, CancellationToken cancellationToken);
+
+    /// <summary>
+    ///
+    /// </summary>
+    Task DeleteDiscipline(Guid id, CancellationToken cancellationToken);
 }

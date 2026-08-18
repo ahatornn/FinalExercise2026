@@ -1,11 +1,12 @@
-﻿using FinalExercise.Entities;
+﻿using FinalExercise.Dal.Contracts.Repositories;
+using FinalExercise.Entities;
 
 namespace FinalExercis.Repositories.Contracts;
 
 /// <summary>
 /// Репозиторий работы с <see cref="Discipline"/>
 /// </summary>
-public interface IDisciplineRepository
+public interface IDisciplineRepository : IBaseWriteRepository<Discipline>
 {
     /// <summary>
     ///

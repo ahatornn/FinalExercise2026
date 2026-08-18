@@ -8,6 +8,7 @@ public class ServiceProfile : Profile
 {
     public ServiceProfile()
     {
-        CreateMap<Discipline, DisciplineModel>();
+        CreateMap<Discipline, DisciplineModel>().ReverseMap();
+        CreateMap<DisciplineCreateModel, Discipline>();
     }
 }
