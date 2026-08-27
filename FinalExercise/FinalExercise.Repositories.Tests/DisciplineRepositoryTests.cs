@@ -1,11 +1,11 @@
 ﻿using Ahatornn.TestGenerator;
-using FinalExercis.Repositories.Contracts;
+using FinalExercise.Repositories.Contracts;
 using FinalExercise.Context.Tests;
 using FinalExercise.Entities;
 using FluentAssertions;
 using Xunit;
 
-namespace FinalExercis.Repositories.Tests;
+namespace FinalExercise.Repositories.Tests;
 
 /// <summary>
 /// Тесты для <see cref="DisciplineRepository"/>

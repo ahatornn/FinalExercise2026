@@ -1,7 +1,7 @@
 ﻿using FinalExercise.Dal.Contracts.Repositories;
 using FinalExercise.Entities;
 
-namespace FinalExercis.Repositories.Contracts;
+namespace FinalExercise.Repositories.Contracts;
 
 /// <summary>
 /// Репозиторий работы с <see cref="Discipline"/>

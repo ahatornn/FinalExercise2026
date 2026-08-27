@@ -8,7 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DataAccessLayer\FinalExercise.Context.Repositories\FinalExercise.Context.Repositories.csproj" />
-      <ProjectReference Include="..\FinalExercis.Repositories.Contracts\FinalExercis.Repositories.Contracts.csproj" />
+      <ProjectReference Include="..\FinalExercise.Repositories.Contracts\FinalExercise.Repositories.Contracts.csproj" />
     </ItemGroup>
 
     <ItemGroup>

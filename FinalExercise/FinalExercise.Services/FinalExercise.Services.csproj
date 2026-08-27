@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FinalExercis.Repositories.Contracts\FinalExercis.Repositories.Contracts.csproj" />
-      <ProjectReference Include="..\FinalExercis.Services.Contracts\FinalExercis.Services.Contracts.csproj" />
+      <ProjectReference Include="..\FinalExercise.Repositories.Contracts\FinalExercise.Repositories.Contracts.csproj" />
+      <ProjectReference Include="..\FinalExercise.Services.Contracts\FinalExercise.Services.Contracts.csproj" />
     </ItemGroup>
 
     <ItemGroup>

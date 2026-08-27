@@ -1,4 +1,4 @@
-﻿namespace FinalExercis.Common;
+﻿namespace FinalExercise.Common;
 
 /// <summary>
 /// Базовая функциональность идентификации пользователя

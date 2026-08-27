@@ -18,10 +18,10 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DataAccessLayer\FinalExercise.Context\FinalExercise.Context.csproj" />
-      <ProjectReference Include="..\FinalExercis.Repositories.Contracts\FinalExercis.Repositories.Contracts.csproj" />
-      <ProjectReference Include="..\FinalExercis.Repositories\FinalExercis.Repositories.csproj" />
-      <ProjectReference Include="..\FinalExercis.Services.Contracts\FinalExercis.Services.Contracts.csproj" />
-      <ProjectReference Include="..\FinalExercis.Services\FinalExercis.Services.csproj" />
+      <ProjectReference Include="..\FinalExercise.Repositories.Contracts\FinalExercise.Repositories.Contracts.csproj" />
+      <ProjectReference Include="..\FinalExercise.Repositories\FinalExercise.Repositories.csproj" />
+      <ProjectReference Include="..\FinalExercise.Services.Contracts\FinalExercise.Services.Contracts.csproj" />
+      <ProjectReference Include="..\FinalExercise.Services\FinalExercise.Services.csproj" />
     </ItemGroup>
 
 </Project>

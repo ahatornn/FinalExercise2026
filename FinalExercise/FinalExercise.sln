@@ -14,23 +14,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercise.Entities.Conf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercise.Context.EntityFrameworkCore", "DataAccessLayer\FinalExercise.Context.EntityFrameworkCore\FinalExercise.Context.EntityFrameworkCore.csproj", "{87F9E08F-CF65-4EF8-A9F4-E965733ED643}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercis.Repositories.Contracts", "FinalExercis.Repositories.Contracts\FinalExercis.Repositories.Contracts.csproj", "{D2291748-685D-49A9-83F4-E5654F175E4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercise.Repositories.Contracts", "FinalExercise.Repositories.Contracts\FinalExercise.Repositories.Contracts.csproj", "{D2291748-685D-49A9-83F4-E5654F175E4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercis.Repositories", "FinalExercis.Repositories\FinalExercis.Repositories.csproj", "{D4630157-D873-4E2D-B0DE-B46A9E8DDEB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercise.Repositories", "FinalExercise.Repositories\FinalExercise.Repositories.csproj", "{D4630157-D873-4E2D-B0DE-B46A9E8DDEB5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercise.Context.Repositories", "DataAccessLayer\FinalExercise.Context.Repositories\FinalExercise.Context.Repositories.csproj", "{E6F624D5-4391-40B8-A46D-9F10A5109305}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercis.Common", "FinalExercis.Common\FinalExercis.Common.csproj", "{0B76EDAD-888D-42A9-AE78-322114423D3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercise.Common", "FinalExercise.Common\FinalExercise.Common.csproj", "{0B76EDAD-888D-42A9-AE78-322114423D3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercis.Repositories.Tests", "FinalExercis.Repositories.Tests\FinalExercis.Repositories.Tests.csproj", "{BF1DD665-42C0-4CDB-8353-D1D66E5F5863}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercise.Repositories.Tests", "FinalExercise.Repositories.Tests\FinalExercise.Repositories.Tests.csproj", "{BF1DD665-42C0-4CDB-8353-D1D66E5F5863}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercise.Context.Tests", "DataAccessLayer\FinalExercise.Context.Tests\FinalExercise.Context.Tests.csproj", "{71EFE257-A91F-4BF2-B879-A973C3F5CF53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercis.Services.Contracts", "FinalExercis.Services.Contracts\FinalExercis.Services.Contracts.csproj", "{27EAE6F7-9965-4156-93DE-F2482E6249EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercise.Services.Contracts", "FinalExercise.Services.Contracts\FinalExercise.Services.Contracts.csproj", "{27EAE6F7-9965-4156-93DE-F2482E6249EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercis.Services", "FinalExercis.Services\FinalExercis.Services.csproj", "{E269BEE4-DF99-4DCC-BFD6-57CB24E67912}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercise.Services", "FinalExercise.Services\FinalExercise.Services.csproj", "{E269BEE4-DF99-4DCC-BFD6-57CB24E67912}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercis.Services.Tests", "FinalExercis.Services.Tests\FinalExercis.Services.Tests.csproj", "{621FC507-C10F-4F21-BA55-AEFE2A85BE5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExercise.Services.Tests", "FinalExercise.Services.Tests\FinalExercise.Services.Tests.csproj", "{621FC507-C10F-4F21-BA55-AEFE2A85BE5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

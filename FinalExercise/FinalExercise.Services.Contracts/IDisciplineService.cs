@@ -1,6 +1,6 @@
-using FinalExercis.Services.Contracts.Models;
+using FinalExercise.Services.Contracts.Models;
 
-namespace FinalExercis.Services.Contracts;
+namespace FinalExercise.Services.Contracts;
 
 public interface IDisciplineService
 {

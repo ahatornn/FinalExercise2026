@@ -1,5 +1,5 @@
 using AutoMapper;
-using FinalExercis.Services.Contracts;
+using FinalExercise.Services.Contracts;
 using FinalExercise.Api.Models;
 using Microsoft.AspNetCore.Mvc;
 

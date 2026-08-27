@@ -1,8 +1,8 @@
-using FinalExercis.Repositories;
-using FinalExercis.Repositories.Contracts;
-using FinalExercis.Services;
-using FinalExercis.Services.Automapper;
-using FinalExercis.Services.Contracts;
+using FinalExercise.Repositories;
+using FinalExercise.Repositories.Contracts;
+using FinalExercise.Services;
+using FinalExercise.Services.Automapper;
+using FinalExercise.Services.Contracts;
 using FinalExercise.Api.Automapper;
 using FinalExercise.Api.Implementations;
 using FinalExercise.Context;

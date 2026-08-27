@@ -1,7 +1,7 @@
 using FinalExercise.Entities;
 using FluentValidation;
 
-namespace FinalExercis.Services.Validators;
+namespace FinalExercise.Services.Validators;
 
 public class DisciplineValidator : AbstractValidator<Discipline>
 {

@@ -1,17 +1,17 @@
 using Ahatornn.TestGenerator;
 using AutoMapper;
-using FinalExercis.Repositories;
-using FinalExercis.Services.Automapper;
-using FinalExercis.Services.Contracts;
-using FinalExercis.Services.Contracts.Exceptions;
-using FinalExercis.Services.Contracts.Models;
+using FinalExercise.Repositories;
+using FinalExercise.Services.Automapper;
+using FinalExercise.Services.Contracts;
+using FinalExercise.Services.Contracts.Exceptions;
+using FinalExercise.Services.Contracts.Models;
 using FinalExercise.Context.Tests;
 using FinalExercise.Entities;
 using FluentAssertions;
 using Microsoft.Extensions.Logging.Abstractions;
 using Xunit;
 
-namespace FinalExercis.Services.Tests;
+namespace FinalExercise.Services.Tests;
 
 public class DisciplineServiceTests : FinalExerciseContextInMemory
 {

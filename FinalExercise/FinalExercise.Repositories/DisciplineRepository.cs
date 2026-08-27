@@ -1,10 +1,10 @@
-﻿using FinalExercis.Repositories.Contracts;
+﻿using FinalExercise.Repositories.Contracts;
 using FinalExercise.Context.Repositories;
 using FinalExercise.Dal.Contracts.Repositories;
 using FinalExercise.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace FinalExercis.Repositories;
+namespace FinalExercise.Repositories;
 
 public class DisciplineRepository : BaseWriteRepository<Discipline>,  IDisciplineRepository
 {

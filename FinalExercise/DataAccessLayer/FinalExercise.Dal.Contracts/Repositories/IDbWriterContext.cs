@@ -1,4 +1,4 @@
-﻿using FinalExercis.Common;
+﻿using FinalExercise.Common;
 
 namespace FinalExercise.Dal.Contracts.Repositories;
 

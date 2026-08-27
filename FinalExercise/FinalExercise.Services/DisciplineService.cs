@@ -1,12 +1,12 @@
 using AutoMapper;
-using FinalExercis.Repositories.Contracts;
-using FinalExercis.Services.Contracts;
-using FinalExercis.Services.Contracts.Exceptions;
-using FinalExercis.Services.Contracts.Models;
+using FinalExercise.Repositories.Contracts;
+using FinalExercise.Services.Contracts;
+using FinalExercise.Services.Contracts.Exceptions;
+using FinalExercise.Services.Contracts.Models;
 using FinalExercise.Dal.Contracts.Repositories;
 using FinalExercise.Entities;
 
-namespace FinalExercis.Services;
+namespace FinalExercise.Services;
 
 public class DisciplineService : IDisciplineService
 {

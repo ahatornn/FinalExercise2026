@@ -1,4 +1,4 @@
-namespace FinalExercis.Services.Contracts.Models;
+namespace FinalExercise.Services.Contracts.Models;
 
 public class DisciplineCreateModel
 {

@@ -1,8 +1,8 @@
 using AutoMapper;
-using FinalExercis.Services.Contracts.Models;
+using FinalExercise.Services.Contracts.Models;
 using FinalExercise.Entities;
 
-namespace FinalExercis.Services.Automapper;
+namespace FinalExercise.Services.Automapper;
 
 public class ServiceProfile : Profile
 {
