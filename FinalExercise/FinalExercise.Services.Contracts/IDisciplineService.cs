@@ -17,7 +17,7 @@ public interface IDisciplineService
     /// <summary>
     ///
     /// </summary>
-    Task CreateDiscipline(DisciplineCreateModel disciplineCreateModel, CancellationToken cancellationToken);
+    Task<DisciplineModel> CreateDiscipline(DisciplineCreateModel disciplineCreateModel, CancellationToken cancellationToken);
 
     /// <summary>
     ///

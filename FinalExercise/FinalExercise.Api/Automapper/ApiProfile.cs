@@ -9,5 +9,7 @@ public class ApiProfile : Profile
     public ApiProfile()
     {
         CreateMap<DisciplineModel, DisciplineApiModel>();
+        CreateMap<DisciplineCreateApiModel, DisciplineCreateModel>();
+        CreateMap<DisciplineCreateApiModel, DisciplineModel>();
     }
 }

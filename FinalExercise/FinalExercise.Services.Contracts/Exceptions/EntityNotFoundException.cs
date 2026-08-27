@@ -1,3 +1,3 @@
 namespace FinalExercise.Services.Contracts.Exceptions;
 
-public class EntityNotFoundException<T>(Guid id) : FinalExerciseException($"Сущность '{typeof(T).Name}' с идентификатором '{id}' не найдена");
+public class EntityNotFoundException<T>(Guid id) : NotFoundException($"Сущность '{typeof(T).Name}' с идентификатором '{id}' не найдена");

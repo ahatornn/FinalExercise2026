@@ -17,4 +17,6 @@ public interface IDisciplineRepository : IBaseWriteRepository<Discipline>
     ///
     /// </summary>
     Task<Discipline?> GetDisciplineByIdAsync(Guid id, CancellationToken cancellationToken);
+
+    Task<Discipline?> GetByName(string name, CancellationToken cancellationToken);
 }

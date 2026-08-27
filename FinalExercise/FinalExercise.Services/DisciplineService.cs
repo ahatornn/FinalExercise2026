@@ -37,16 +37,31 @@ public class DisciplineService : IDisciplineService
         return mapper.Map<DisciplineModel>(result);
     }
 
-    async Task IDisciplineService.CreateDiscipline(DisciplineCreateModel disciplineCreateModel, CancellationToken cancellationToken)
+    async Task<DisciplineModel> IDisciplineService.CreateDiscipline(DisciplineCreateModel disciplineCreateModel, CancellationToken cancellationToken)
     {
+        var existing = await disciplineRepository.GetByName(disciplineCreateModel.Name, cancellationToken);
+        if (existing is not null)
+        {
+            throw new FinalExerciseInvalidOperationException("Предмет с таким названием уже существует");
+        }
+
         var entity = mapper.Map<Discipline>(disciplineCreateModel);
         disciplineRepository.Add(entity);
 
         await unitOfWork.SaveChangesAsync(cancellationToken);
+
+        var result = mapper.Map<DisciplineModel>(entity);
+        return result;
     }
 
     async Task IDisciplineService.UpdateDiscipline(DisciplineModel disciplineModel, CancellationToken cancellationToken)
     {
+        var existing = await disciplineRepository.GetByName(disciplineModel.Name, cancellationToken);
+        if (existing is not null && existing.Id != disciplineModel.Id)
+        {
+            throw new FinalExerciseInvalidOperationException("Предмет с таким названием уже существует");
+        }
+
         var entity = await disciplineRepository.GetDisciplineByIdAsync(disciplineModel.Id, cancellationToken);
         if (entity is null)
         {

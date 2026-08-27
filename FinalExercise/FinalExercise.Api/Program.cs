@@ -5,13 +5,23 @@ using FinalExercise.Services.Automapper;
 using FinalExercise.Services.Contracts;
 using FinalExercise.Api.Automapper;
 using FinalExercise.Api.Implementations;
+using FinalExercise.Api.Infrastructure;
+using FinalExercise.Common;
 using FinalExercise.Context;
 using FinalExercise.Dal.Contracts.Repositories;
+using FinalExercise.Services.Validators;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+builder.Services.AddSingleton<IIdentityProvider,  IdentityProvider>();
+
+builder.Services.AddScoped<IValidateService, ValidateService>();
+builder.Services.RegisterImplementationsOf<IValidator>(typeof(DisciplineCreateModelValidator).Assembly, ServiceLifetime.Scoped);
 
 builder.Services.AddScoped<IDisciplineRepository, DisciplineRepository>();
 builder.Services.AddScoped<IDisciplineService, DisciplineService>();
@@ -29,7 +39,7 @@ builder.Services.AddScoped<IReader>(x => x.GetRequiredService<FinalExerciseConte
 builder.Services.AddScoped<IWriter>(x => x.GetRequiredService<FinalExerciseContext>());
 
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(opts => opts.Filters.Add<ExceptionFilter>());
 builder.Services.AddHealthChecks();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();

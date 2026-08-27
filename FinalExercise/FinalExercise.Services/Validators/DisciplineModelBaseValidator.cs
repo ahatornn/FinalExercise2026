@@ -1,11 +1,12 @@
-using FinalExercise.Entities;
+using FinalExercise.Services.Contracts.Models;
 using FluentValidation;
 
 namespace FinalExercise.Services.Validators;
 
-public class DisciplineValidator : AbstractValidator<Discipline>
+public abstract class DisciplineModelBaseValidator<T> : AbstractValidator<T>
+    where T : DisciplineCreateModel
 {
-    public DisciplineValidator()
+    public DisciplineModelBaseValidator()
     {
         RuleFor(x => x.Description)
             .NotEmpty()

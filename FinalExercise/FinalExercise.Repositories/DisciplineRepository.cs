@@ -30,4 +30,10 @@ public class DisciplineRepository : BaseWriteRepository<Discipline>,  IDisciplin
             .NotDeletedAt()
             .ById(id)
             .FirstOrDefaultAsync(cancellationToken);
+
+    Task<Discipline?> IDisciplineRepository.GetByName(string name, CancellationToken cancellationToken)
+        => reader.Read<Discipline>()
+            .NotDeletedAt()
+            .Where(x => x.Name.Contains(name))
+            .FirstOrDefaultAsync(cancellationToken);
 }
